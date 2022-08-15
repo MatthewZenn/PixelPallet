@@ -123,8 +123,9 @@ p {
     margin-right: 30px;
 }
 
-.number2:focus {
-    border: 2px solid rgb(255, 47, 92);
+.number2:hover {
+    color: rgb(255, 47, 92);
+    cursor: pointer;
 }
 
 #square {

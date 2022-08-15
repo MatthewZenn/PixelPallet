@@ -5,10 +5,10 @@ var color4 = document.getElementById("col4");
 var i = 0;
 var huel = 0;
 var k = 0;
-var h1 = 0;
-var h2 = 0;
-var h3 = 0;
-var h4 = 0;
+var h1 = 20;
+var h2 = 40;
+var h3 = 60;
+var h4 = 80;
 
 function RGBToHex(rgb) {
     // Choose correct separator
@@ -70,10 +70,22 @@ document.getElementById("gen").onclick = function() {generate()};
 function generate() {
     i = document.getElementById("shift").value;
 
-    color4.style.backgroundColor = `hsl(${huel+(i*3)}, ${100-k}%, 20%)`;
-    color3.style.backgroundColor = `hsl(${huel+(i*2)}, ${100-k}%, 40%)`;
-    color2.style.backgroundColor = `hsl(${huel+(i*1)}, ${100-k}%, 60%)`;
-    color1.style.backgroundColor = `hsl(${huel+0}, ${100-k}%, 80%)`;
+    if (document.getElementById("check").checked == true) {
+      h1 = 50;
+      h2 = 50;
+      h3 = 50;
+      h4 = 50;
+    } else {
+      h1 = 20;
+      h2 = 40;
+      h3 = 60;
+      h4 = 80;
+    }
+
+    color4.style.backgroundColor = `hsl(${huel+(i*3)}, ${100-k}%, ${h1}%)`;
+    color3.style.backgroundColor = `hsl(${huel+(i*2)}, ${100-k}%, ${h2}%)`;
+    color2.style.backgroundColor = `hsl(${huel+(i*1)}, ${100-k}%, ${h3}%)`;
+    color1.style.backgroundColor = `hsl(${huel+0}, ${100-k}%, ${h4}%)`;
 
     document.getElementById("square").style.backgroundColor = `hsl(${huel}, 100%, 50%)`;
 
