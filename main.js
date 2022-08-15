@@ -73,12 +73,13 @@ function generate() {
     color4.style.backgroundColor = `hsl(${huel+(i*3)}, ${100-k}%, 20%)`;
     color3.style.backgroundColor = `hsl(${huel+(i*2)}, ${100-k}%, 40%)`;
     color2.style.backgroundColor = `hsl(${huel+(i*1)}, ${100-k}%, 60%)`;
-    color1.style.backgroundColor = `hsl(${huel}, ${100-k}%, 80%)`;
+    color1.style.backgroundColor = `hsl(${huel+0}, ${100-k}%, 80%)`;
 
     document.getElementById("square").style.backgroundColor = `hsl(${huel}, 100%, 50%)`;
 
     document.getElementById("code1").innerHTML = 'Hue: '+huel;
     document.getElementById("code2").innerHTML = 'Satuartion: '+(100-k)+'%';
+    document.getElementById("code3").innerHTML = 'Hex: '+document.getElementById("square").style.backgroundColor;
 
     document.getElementById("c1").value = RGBToHex(color1.style.backgroundColor);
     document.getElementById("c2").value = RGBToHex(color2.style.backgroundColor);

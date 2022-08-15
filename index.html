@@ -30,11 +30,14 @@
             <input type="button" id="col3" class="color">
             <input type="button" id="col4" class="color">
         </div>
-        <button type="button" id="gen">Generate Pallet</button>
+        <div class="buttons">
+            <button type="button" id="gen">Generate Pallet</button>
+            <input type="checkbox" class="check">
+        </div>
         <div class="shifts">
-            <input type="number" id="hue" class="number" placeholder="Hue">
-            <input type="number" class="number" id="shift" placeholder="Shift">
-            <input type="number" class="number" id="brightness" placeholder="Level">
+            <input type="number" id="hue" class="number" placeholder="Hue" title="Sets the starting Hue value">
+            <input type="number" class="number" id="shift" placeholder="Shift" title="Sets how much each Color is shifted from the starting Hue">
+            <input type="number" class="number" id="brightness" placeholder="Level" title="Sets how much to subtract from Saturation level">
         </div>
         <script src="main.js" async defer></script>
     </body>

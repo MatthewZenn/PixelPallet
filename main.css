@@ -4,7 +4,7 @@ html, body {
 
 .pallet {
     position: absolute;
-    top: 25%;
+    top: 42%;
     left: 50%;
     transform: translate(-50%, 0);
 }
@@ -21,8 +21,15 @@ html, body {
     border-color: rgb(255, 47, 92);
 }
 
-#gen {
+.buttons {
     position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    display: inline;
+}
+
+#gen {
     background-color: rgb(40, 40, 40);
     color: white;
     width: 250px;
@@ -30,10 +37,7 @@ html, body {
     border: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15pt;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50px;
+    border-radius: 50px 0 0 50px;
 }
 
 #gen:hover {
@@ -43,14 +47,14 @@ html, body {
 
 .shifts {
     position: absolute;
-    top: 60%;
+    top: 62%;
     left: 50%;
     transform: translate(-50%, 0);
 }
 
 .hues {
     position: absolute;
-    top: 18%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, 0);
 }
@@ -94,12 +98,15 @@ input[type=number] {
     left: 50%;
     transform: translate(-50%, 0);
     display: inline-block;
+    top: 15%;
+    justify-items: center;
 }
 
 p {
     color: grey;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 14pt;
+    text-align: center;
 }
 
 .number2 {
@@ -125,4 +132,33 @@ p {
     height: 10px;
     border: 2px solid gray;
     background-color: red;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    background-color: rgb(40, 40, 40);
+    margin: 0;
+    width: 75px;
+    height: 75px;
+    border: none;
+    border-radius: 0 50px 50px 0px;
+    transform: translate(0%, 40%);
+}
+
+input[type="checkbox"]:hover {
+    appearance: none;
+    background-color: rgb(255, 47, 92);
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    appearance: none;
+    background-color: rgb(255, 47, 92);
+}
+
+input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
 }
