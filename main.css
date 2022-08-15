@@ -75,3 +75,24 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+.logo {
+    position: absolute;
+    width: 50rem;
+    image-rendering: pixelated;
+    top: -50px;
+    margin-top: 10px;
+}
+
+.start {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: inline-block;
+}
+
+p {
+    color: grey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14pt;
+}
