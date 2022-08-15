@@ -48,6 +48,13 @@ html, body {
     transform: translate(-50%, 0);
 }
 
+.hues {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
 .number {
     width: 80px;
     height: 50px;
@@ -67,10 +74,8 @@ html, body {
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+  appearance: none;
 }
-
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
@@ -95,4 +100,29 @@ p {
     color: grey;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 14pt;
+}
+
+.number2 {
+    width: 80px;
+    height: 50px;
+    background-color: rgb(20, 20, 20);
+    border: 2px solid rgb(40, 40, 40);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 15pt;
+    text-align: center;
+    outline: none;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.number2:focus {
+    border: 2px solid rgb(255, 47, 92);
+}
+
+#square {
+    width: 10px;
+    height: 10px;
+    border: 2px solid gray;
+    background-color: red;
 }
